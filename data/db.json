@@ -1,0 +1,73 @@
+{
+  "posts": [
+    {
+      "name": "NIYONGABO FESTUS",
+      "email": "festusniyongabo@gmail.com",
+      "subject": "thankful",
+      "message": "you done well mr festus"
+    },
+    {
+      "name": "NIYONGABO FESTUS",
+      "email": "festusniyongabo@gmail.com",
+      "subject": "thankful",
+      "message": "you done well mr festus"
+    },
+    {
+      "name": "festus",
+      "email": "festusniyongabo@gmail.com",
+      "subject": "great",
+      "message": "jgliyrpalhnioajva",
+      "id": 3
+    },
+    {
+      "name": "festus",
+      "email": "festusniyongabo@gmail.com",
+      "subject": "greet",
+      "message": "fgjjhklkjfgh",
+      "id": 4
+    },
+    {
+      "name": "manu",
+      "email": "manu@gmail.com",
+      "subject": "hi",
+      "message": "tdfyghjlkyfducjvhfiytjdjfjgfcgh",
+      "id": 5
+    },
+    {
+      "name": "festus",
+      "email": "festusniyongabo@gmail.com",
+      "subject": "greet",
+      "message": "fjgkjhljlkjhjfgjhk",
+      "id": 6
+    },
+    {
+      "name": "festus",
+      "email": "festusniyongabo@gmail.com",
+      "subject": "hi",
+      "message": "gxxcv vxgsfsrtrer",
+      "id": 7
+    },
+    {
+      "name": "festus",
+      "email": "manu@gmail.com",
+      "subject": "greet",
+      "message": "rdftygiuhopjipuyituyrdufghj",
+      "id": 8
+    },
+    {
+      "name": "festus",
+      "email": "manu@gmail.com",
+      "subject": "tfuygukhlhljkjhjdfkhgj",
+      "message": "hfgfjhklhgfhzxcmhjhm",
+      "id": 9
+    }
+  ],
+  "polls": [
+    {
+      "id": 1,
+      "question": "do you like javaScript",
+      "answerA": "YES",
+      "answerB": "NO"
+    }
+  ]
+}

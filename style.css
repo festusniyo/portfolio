@@ -1,0 +1,53 @@
+body{
+    background:#eee;
+    color: #444;
+    font-family: 'roboto';
+    max-width: 960px;
+    margin: 100px auto;
+    padding: 10px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+nav h1{
+    margin: 0px;
+}
+nav a{
+    color: #fff;
+    padding: 10px 12px;
+    margin: 2px 0px;
+    background:  rgb(28, 184, 80);
+    border-radius: 10px;
+    text-decoration: none;
+}
+form{
+   max-width: 500px;
+}
+
+input,textarea[type="text"]{
+    width: 50%;
+    padding: 12px 15px;
+    margin: 8px 0px;
+    border: 1px rgb(200, 200, 203);
+    border-radius: 4px;
+    display: block;
+    font-family: 'roboto';
+    margin-left: 10px;
+}
+textarea{
+    min-height: 200px;
+}
+button:hover{
+    background: rgb(10, 10, 10);
+}
+
+button[type="submit"]{
+    cursor: pointer;
+    padding: 3px 12px;
+    border: none;
+    background: rgb(123, 200, 219);
+    font-size: 1rem;
+    margin-left: 10px;
+
+}
