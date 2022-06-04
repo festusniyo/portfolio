@@ -16,7 +16,7 @@ const renderPosts=async (term) => {
                 <h2>${post.name}</h2>
                 <p><small>${post.email}</small></p>
                 <p><small>${post.subject}</small></p>
-                <p>${post.message.slice(0, 200)}</p>
+                <p><small>${post.message.slice(0, 200)}</small></p>
                 <a href="details.html?id=${post.id}">read more....</a>
             </dv>
         ` 
