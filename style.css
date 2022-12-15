@@ -5,7 +5,7 @@ body {
 }
 
 a {
-  color: #5195da;
+  color: #f9fcff;
   text-decoration: none;
 }
 
@@ -143,10 +143,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 .nav-menu a:hover, .nav-menu .active, .nav-menu .active:focus, .nav-menu li:hover > a {
   text-decoration: none;
-  color: rgb(90, 17, 226);
+  color: rgb(53, 121, 87);
 }
 .nav-menu a:hover i, .nav-menu .active i, .nav-menu .active:focus i, .nav-menu li:hover > a i {
-  color: #5740d8;
+  color: #36975f;
 }
 
 /* Mobile Navigation */
@@ -259,7 +259,8 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: #173b6c;
+  color: #486286;
+  margin-left: 120px;
 }
 .section-title h2::after {
   content: "";
@@ -267,12 +268,13 @@ section {
   display: block;
   width: 50px;
   height: 3px;
-  background: #149ddd;
+  background: #14dd50;
   bottom: 0;
   left: 0;
 }
 .section-title p {
   margin-bottom: 0;
+  
 }
 
 /*--------------------------------------------------------------
@@ -281,7 +283,8 @@ section {
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;
-  color: #173b6c;
+  color: #21bd62;
+  margin-left: 130px;
 }
 .about .content ul {
   list-style: none;
@@ -392,12 +395,14 @@ section {
   margin-top: 20px;
   margin-bottom: 20px;
   color: #050d18;
+  margin-left: 140px;
 }
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
   border-left: 2px solid #060708;
   position: relative;
+  margin-left: 140px;
 }
 .resume .resume-item h4 {
   line-height: 18px;
@@ -407,6 +412,7 @@ section {
   font-family: "Poppins", sans-serif;
   color: #050d18;
   margin-bottom: 10px;
+  
 }
 .resume .resume-item h5 {
   font-size: 16px;
@@ -415,15 +421,19 @@ section {
   display: inline-block;
   font-weight: 600;
   margin-bottom: 10px;
+  
 }
 .resume .resume-item ul {
   padding-left: 20px;
+  
 }
 .resume .resume-item ul li {
   padding-bottom: 10px;
+  
 }
 .resume .resume-item:last-child {
   padding-bottom: 0;
+  
 }
 .resume .resume-item::before {
   content: "";
@@ -435,6 +445,7 @@ section {
   top: 0;
   background: #fff;
   border: 2px solid #1f5297;
+  
 }
 
 /*--------------------------------------------------------------
@@ -631,19 +642,20 @@ section {
 --------------------------------------------------------------*/
 .contact {
   padding-bottom: 130px;
+  margin-left: 180px;
 }
 .contact .info {
   padding: 30px;
   background: #fff;
-  width: 100%;
+  width: auto;
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
 }
 .contact .info i {
   font-size: 20px;
   color: #149ddd;
   float: left;
-  width: 44px;
-  height: 44px;
+  width: 40px;
+  height: 40px;
   background: #dff3fc;
   display: flex;
   justify-content: center;
@@ -653,8 +665,8 @@ section {
 }
 .contact .info h4 {
   padding: 0 0 0 60px;
-  font-size: 22px;
-  font-weight: 600;
+  font-size: 20px;
+  font-weight: 500;
   margin-bottom: 5px;
   color: #050d18;
 }
