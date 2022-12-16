@@ -654,11 +654,11 @@ section {
 }
 .contact .info i {
   font-size: 20px;
-  color: #9aa6a0;
+  color: rgb(51, 154, 139);
   float: left;
   width: 30px;
   height: 30px;
-  background: #37955b;
+  background: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
