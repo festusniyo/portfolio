@@ -681,16 +681,32 @@ section {
 .contact .info .email p {
   padding-top: 5px;
 }
+ #name-error{
 
-div#block-f4ffb10b444f9c603fa1 p:nth-child(4):before {
-  content: "\f095";
-  font-family: FontAwesome;
-  padding-right: 5px;
+  color: red;
+
 }
-div#block-f4ffb10b444f9c603fa1 p:nth-child(5):before {
-  content: "\f0e0";
-  font-family: 'FontAwesome';
-  padding-right: 5px;
+#message-error{
+  color: red;
+ 
+}
+#subject-error{
+  color: red;
+}
+#email-error{
+  color: red;
+}
+#submit-error{
+  color: red;
+}
+.input-group{
+  margin-left: 200px;
+}
+.input-group span {
+  color: seagreen;
+}
+.input-group textarea{
+  width: 100%;
 }
 
 /*--------------------------------------------------------------

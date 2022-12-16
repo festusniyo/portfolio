@@ -215,25 +215,36 @@
             <div class="col-lg-7 mt-5 mt-lg-0 ">
               
               <div class="row">
-                
-                <form>
-                  <div class="text-center">
-                    <div class="col">
-                        <input type="text" name="name" size="16"  placeholder="enter name">
-                        <input type="text" name="subject" size="16" placeholder="subject"> 
+                <div class="input-group">
+                  <form>
+                    <div class="">
+                      <input type="text" name="name" size="38"  placeholder="enter name" id="contact-name" onkeyup="validateName()">
+                      <span id="name-error"></span> 
                     </div>
-                      
-                  </div><br/>
-                  <div class="text-center">
-                    <input type="email"  name="email" size="38"  placeholder="Email">
-                  </div><br/>
-                  <div class="text-center">
-                    <textarea style="width:50%;" rows="5" placeholder="message"></textarea>
+                    <div class=""> 
+                      <input type="text" name="subject" size="38" placeholder="subject" id="contact-subject" onkeyup="validateSubject()">
+                        <span id="subject-error"></span> 
+                    </div>
+                        
+                    <br/>
+                    <div class="" >
+                      <input type="email"  name="email" size="38"  placeholder="Email" id="contact-email" onkeyup="validateEmail()">
+                      <span id="email-error"></span>
+                    </div><br/>
+                    <div class="" >
+                      <textarea  rows="5" name="message" placeholder="message" id="contact-message" onkeyup="validateMessage()"></textarea>
+                      <span id="message-error"></span>
+                    </div>
                   </div>
+                    <div class="" style="margin-left: 280px;"><button type="submit" style="background-color: rgb(48, 124, 48);" onclick="return validateForm()">Send Message</button>
+                      <span id="submit-error"></span>
+                    </div>
+                
+                  </form>
                 </div>
-                  <div class="text-center"><button type="submit">Send Message</button></div>
-              
-                </form>
+                <script src="script.js"></script>
+                
+                
               </div>
             </div>
           </div>
