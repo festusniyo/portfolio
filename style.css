@@ -603,13 +603,14 @@ section {
   justify-content: center;
   width: 54px;
   height: 54px;
-  background: #149ddd;
+  background: rgb(239, 236, 236);
   border-radius: 50%;
   transition: 0.5s;
-  border: 1px solid #149ddd;
+  border: 1px solid #fff;
+  margin-left: 170px;
 }
 .services .icon i {
-  color: #fff;
+  color: rgb(35, 203, 139);
   font-size: 24px;
   line-height: 0;
 }
@@ -617,7 +618,7 @@ section {
   background: #fff;
 }
 .services .icon-box:hover .icon i {
-  color: #149ddd;
+  color: #fff;
 }
 .services .title {
   margin-left: 80px;
@@ -627,12 +628,13 @@ section {
 }
 .services .title a {
   color: #343a40;
+  right: 0px;
 }
 .services .title a:hover {
-  color: #149ddd;
+  color: #fff;
 }
 .services .description {
-  margin-left: 80px;
+  margin-left: 200px;
   line-height: 24px;
   font-size: 14px;
 }
