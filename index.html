@@ -18,6 +18,15 @@
     <link href="style.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $(".hamburger").click(function(){
+          $(".nav-menu").toggleClass("collapse");
+          $(".main_container").toggleClass("collapse");
+        });
+      });
+    </script>
   
   </head>
   
@@ -29,265 +38,272 @@
     <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
   
     <!-- ======= Header ======= -->
-    <header id="header">
+    <div class="wrapper">
+      <header id="header" class="header">
     
-      <div class="row">
-        <div class="col-6">
-          <div class="profile">
-            <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
-            <h1 class="text-light"><a href="index.html">Festus</a></h1>
+        <div class="row">
+          <div class="col-6">
+            <div class="profile">
+              <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
+              <h1 class="text-light"><a href="index.html">Festus.N</a></h1>
+            </div>
           </div>
-        </div>
-  
-  
-        <nav id="navbar" class="nav-menu navbar">
-          <ul>
-            <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-            <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About me</span></a></li>
-            <li><a href="#services" class="nav-link scrollto"><i class="bx bx-user"></i> <span>What I do</span></a></li>
-            <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-            <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
-            <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
-          </ul>
-        </nav><!-- .nav-menu -->
-     </div>
-     <div class="col" style="margin-top: 70%;">
-      <a href="#" class="fa fa-twitter"><i class="bx bxl-twitter"></i></a>
-      <a href="#" class="fa fa-facebook"><i class="bx bxl-facebook"></i></a>
-      <a href="#" class="fa fa-instagram"><i class="bx bxl-instagram"></i></a>
-      <a href="#" class="fa fa-google-plus"><i class="bx bxl-skype"></i></a>
-      <a href="#" class="fa fa-linkedin"><i class="bx bxl-linkedin"></i></a>
     
-     </div>
-  
-    </header><!-- End Header -->
-  
-  
-    <!-- ======= Hero Section ======= -->
-    <section id="hero" class="d-flex flex-column justify-content-center align-items-center" style="background-image: url('./assets/img/bg.JPG');">
-      <div class="hero-container" data-aos="fade-in">
-        <p>Welcome</p>
-        <h1>hello,I'm NIYONGABO Festus</h1>
-        <p>I'm a web developer & web designer.</p>
-        <button class="btn btn-success" style="margin-left: 500px;">Hire Me</button>
+          <div class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <nav id="navbar" class="nav-menu navbar">
+            
+            <ul>
+              
+              <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+              <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About me</span></a></li>
+              <li><a href="#services" class="nav-link scrollto"><i class="bx bx-user"></i> <span>What I do</span></a></li>
+              <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+              <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
+              <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+            </ul>
+          </nav><!-- .nav-menu -->
+       </div>
+       
+      </header><!-- End Header -->
+    </div>
+      <div class="media">
+        <div class="credits">
+          <a href="#" class="fa fa-twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="#" class="fa fa-facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="#" class="fa fa-instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="#" class="fa fa-google-plus"><i class="bx bxl-skype"></i></a>
+          <a href="#" class="fa fa-linkedin"><i class="bx bxl-linkedin"></i></a>
+        </div>
       </div>
-    </section><!-- End Hero -->
   
-    <main id="main">
-  
-      <!-- ======= About Section ======= -->
-      <section id="about" class="about">
-        <div class="container">
-  
-          <div class="section-title">
-            <h2>About me</h2>
-            </div>
-  
-          <div class="row">
-            <div class="col-lg-4" data-aos="fade-right">
-              <img src="assets/img/profile-img.jpg" class="img-fluid" alt="" style="margin-left: 120px;">
-            </div>
-            <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-              <h3>Web Developer &amp;UI/UX Designer.</h3>
-  
-              <div class="row">
-                <div class="col-lg-6">
-                  <ul>
-                    <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>1 May 1999</span></li>
-                    <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+250786087331</span></li>
-                    <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Kigali</span></li>
-                    <li><i class="bi bi-chevron-right"></i> <strong>Nationarity:</strong><span>Rwanda</span></li>
-                   
-                  </ul>
-                </div>
-                <div class="col-lg-6">
-                  <ul>
-                    <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>23</span></li>
-                    <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Advanced diploma</span></li>
-                    <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span style="color: #21bd62;">festusniyongabo@gmail.com</span></li>
-                    <li><i class="bi bi-chevron-right"></i> <strong>Martial status:</strong><span>Single</span></li>
+      <!-- ======= Hero Section ======= -->
+      <section id="hero" class="d-flex flex-column justify-content-center align-items-center" style="background-image: url('./assets/img/bg.JPG');">
+        <div class="hero-container" data-aos="fade-in">
+          <p>Welcome</p>
+          <h1>hello,I'm NIYONGABO Festus</h1>
+          <p>I'm a web developer & web designer.</p>
+          <button class="btn btn-success" style="margin-left: 500px;">Hire Me</button>
+        </div>
+      </section><!-- End Hero -->
+    
+      <main id="main" class="main_container">
+    
+        <!-- ======= About Section ======= -->
+        <section id="about" class="about">
+          <div class="container">
+    
+            <div class="section-title">
+              <h2>About me</h2>
+              </div>
+    
+            <div class="row">
+              <div class="col-lg-4" data-aos="fade-right">
+                <img src="assets/img/profile-img.jpg" class="img-fluid" alt="" style="margin-left: 120px;">
+              </div>
+              <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+                <h3>Web Developer &amp;UI/UX Designer.</h3>
+    
+                <div class="row">
+                  <div class="col-lg-6">
+                    <ul>
+                      <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>1 May 1999</span></li>
+                      <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+250786087331</span></li>
+                      <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Kigali</span></li>
+                      <li><i class="bi bi-chevron-right"></i> <strong>Nationarity:</strong><span>Rwanda</span></li>
+                     
                     </ul>
+                  </div>
+                  <div class="col-lg-6">
+                    <ul>
+                      <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>23</span></li>
+                      <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Advanced diploma</span></li>
+                      <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span style="color: #21bd62;">festusniyongabo@gmail.com</span></li>
+                      <li><i class="bi bi-chevron-right"></i> <strong>Martial status:</strong><span>Single</span></li>
+                      </ul>
+                  </div>
                 </div>
-              </div>
-  
-            </div>
-          </div>
-  
-        </div>
-      </section><!-- End About Section -->
-      <!-- start services section -->
-      <section id="services" class="services">
-        <div class="container">
-  
-          <div class="section-title">
-            <h2>Services</h2>
-          </div>
-  
-          <div class="row">
-            <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
-              <div class="icon"><i class="fa fa-edit"></i></div>
-              <h4 class="title"><a href="">UX/UI Design</a></h4>
-              <p class="description">UX stands for “user experience,” and UI stands for “user interface.”</p>
-            </div>
-            <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
-              <div class="icon"><i class="fa fa-desktop"></i></div>
-              <h4 class="title"><a href="">Web Design</a></h4>
-              <p class="description">refers to the design of websites that are displayed on the internet.</p>
-            </div>
-            <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
-              <div class="icon"><i class="fa fa-paint-brush"></i></div>
-              <h4 class="title"><a href="">App Design</a></h4>
-              <p class="description">an ongoing process comprising user experience(UX) and user interface (UI)elements.</p>
-            </div>
-          </div>
-  
-        </div>
-      </section><!-- End Services Section -->
-      
-      <!-- ======= Resume Section ======= -->
-      <section id="resume" class="resume">
-        <div class="container">
-  
-          <div class="section-title">
-            <h2>Resume</h2>
-            </div>
-  
-          <div class="row">
-            <div class="col-lg-6" data-aos="fade-up">
-              <h3 class="resume-title">Sumary</h3>
-              <div class="resume-item pb-0">
-                <h4>NIYONGABO Festus</h4>
-                <p><em>I am a hardworking, reliable and motivated person with strong science background am currently completed A level in ELECTRONICs AND TELECOMMUNICATION and completed university in INFORMATION AND COMMUNICATION THECHNOLOGY (ICT). I am innovative and responsible with computer basic skills proved by certificates. Good communicator and interpersonal skills, my determination and dedication is highlighted by my working outcome. </em></p>
-                
-              </div>
-  
-              <h3 class="resume-title">Education</h3>
-              <div class="resume-item">
-                <h4>Advanced diploma in ICT</h4>
-                <h5>2018 - 2021</h5>
-                <p><em>IPRC Tumba</em></p>
-               </div>
-          </div>
-            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-              <h3 class="resume-title">Professional Experience</h3>
-              <div class="resume-item">
-                <h4>Web application development at IPRC TUMBA for final year project, developing my own ideas, class exam, and assignments (from Sept 28, 2018 up to Dec 2021)</h4>
-                <h5>2018 - Present</h5>
-                <ul>
-                  <li>Website development </li>
-                  <li>Building systems and management </li>
-                </ul>
-              </div>
-              <div class="resume-item">
-                <h4>Network installation especial fiber optic at NERO SERVICES LTD (from Sept 28, 2021 up to Nov 18, 2021)</h4>
-                <h5>2021 - present</h5>
-                <ul>
-                  <li>Network installation.</li>
-                  <li>Network support</li>
-                  <li>Router configuration</li>
-                 </ul>
+    
               </div>
             </div>
+    
           </div>
-  
-        </div>
-      </section><!-- End Resume Section -->
-       <!-- ======= Portfolio Section ======= -->
-       <section id="portfolio" class="portfolio section-bg">
-        <div class="container">
-  
-          <div class="section-title">
-            <h2>Portfolio</h2>
-          </div>
-  
-          <div class="row">
-            <div class="col-lg-12 d-flex justify-content-center bg-danger">
-              <p>Portfolio interface screenshot</p>
+        </section><!-- End About Section -->
+        <!-- start services section -->
+        <section id="services" class="services">
+          <div class="container">
+    
+            <div class="section-title">
+              <h2>Services</h2>
             </div>
-          
-            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-              <div class="card">
-                  <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery"></a>
-                
+    
+            <div class="row">
+              <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+                <div class="icon"><i class="fa fa-edit"></i></div>
+                <h4 class="title"><a href="">UX/UI Design</a></h4>
+                <p class="description">UX stands for “user experience,” and UI stands for “user interface.”</p>
+              </div>
+              <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
+                <div class="icon"><i class="fa fa-desktop"></i></div>
+                <h4 class="title"><a href="">Web Design</a></h4>
+                <p class="description">refers to the design of websites that are displayed on the internet.</p>
+              </div>
+              <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
+                <div class="icon"><i class="fa fa-paint-brush"></i></div>
+                <h4 class="title"><a href="">App Design</a></h4>
+                <p class="description">an ongoing process comprising user experience(UX) and user interface (UI)elements.</p>
               </div>
             </div>
-  
-        </div>
-      </section><!-- End Portfolio Section -->
-      <!-- ======= Contact Section ======= -->
-      <section id="contact" class="contact">
-        <div class="container">
-  
-          <div class="section-title">
-            <h2>Contact</h2>
+    
           </div>
-            <h3 style="margin-left: 160px;">Adress<span style="margin-left: 450px;">Send me a note</span></h3>
-          <div class="row" data-aos="fade-in">
-            <div class="col-lg-5 ">
-              <div class="info">
-                <div class="address">
-                  <i class="fa fa-map-marker"></i>
-                  <h4>Kigali-Rwanda</h4>
-                </div>
-  
-                <div class="email">
-                  <i class="fa fa-envelope"></i>
-                  <h4>+25076087331<h4>
+        </section><!-- End Services Section -->
+        
+        <!-- ======= Resume Section ======= -->
+        <section id="resume" class="resume">
+          <div class="container">
+    
+            <div class="section-title">
+              <h2>Resume</h2>
+              </div>
+    
+            <div class="row">
+              <div class="col-lg-6" data-aos="fade-up">
+                <h3 class="resume-title">Sumary</h3>
+                <div class="resume-item pb-0">
+                  <h4>NIYONGABO Festus</h4>
+                  <p><em>I am a hardworking, reliable and motivated person with strong science background am currently completed A level in ELECTRONICs AND TELECOMMUNICATION and completed university in INFORMATION AND COMMUNICATION THECHNOLOGY (ICT). I am innovative and responsible with computer basic skills proved by certificates. Good communicator and interpersonal skills, my determination and dedication is highlighted by my working outcome. </em></p>
                   
                 </div>
-  
-                <div class="phone">
-                  <i style="font-size:24px" class="fa fa-phone"></i>
-                  <h4>festusniyongabo@gmail.com</h4>
+    
+                <h3 class="resume-title">Education</h3>
+                <div class="resume-item">
+                  <h4>Advanced diploma in ICT</h4>
+                  <h5>2018 - 2021</h5>
+                  <p><em>IPRC Tumba</em></p>
+                 </div>
+            </div>
+              <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                <h3 class="resume-title">Professional Experience</h3>
+                <div class="resume-item">
+                  <h4>Web application development at IPRC TUMBA for final year project, developing my own ideas, class exam, and assignments (from Sept 28, 2018 up to Dec 2021)</h4>
+                  <h5>2018 - Present</h5>
+                  <ul>
+                    <li>Website development </li>
+                    <li>Building systems and management </li>
+                  </ul>
+                </div>
+                <div class="resume-item">
+                  <h4>Network installation especial fiber optic at NERO SERVICES LTD (from Sept 28, 2021 up to Nov 18, 2021)</h4>
+                  <h5>2021 - present</h5>
+                  <ul>
+                    <li>Network installation.</li>
+                    <li>Network support</li>
+                    <li>Router configuration</li>
+                   </ul>
                 </div>
               </div>
             </div>
-            <div class="col-lg-7 mt-5 mt-lg-0 ">
-              
-              <div class="row">
-                <div class="input-group">
-                  <form>
-                    <div class="">
-                      <input type="text" name="name" size="38"  placeholder="enter name" id="contact-name" onkeyup="validateName()">
-                      <span id="name-error"></span> 
-                    </div>
-                    <div class=""> 
-                      <input type="text" name="subject" size="38" placeholder="subject" id="contact-subject" onkeyup="validateSubject()">
-                        <span id="subject-error"></span> 
-                    </div>
-                        
-                    <br/>
-                    <div class="" >
-                      <input type="email"  name="email" size="38"  placeholder="Email" id="contact-email" onkeyup="validateEmail()">
-                      <span id="email-error"></span>
-                    </div><br/>
-                    <div class="" >
-                      <textarea  rows="5" name="message" placeholder="message" id="contact-message" onkeyup="validateMessage()"></textarea>
-                      <span id="message-error"></span>
-                    </div>
-                  </div>
-                    <div class="" style="margin-left: 280px;"><button type="submit" style="background-color: rgb(21, 223, 199);" onclick="return validateForm()">Send Message</button>
-                      <span id="submit-error"></span>
-                    </div>
-                
-                  </form>
+    
+          </div>
+        </section><!-- End Resume Section -->
+         <!-- ======= Portfolio Section ======= -->
+         <section id="portfolio" class="portfolio section-bg">
+          <div class="container">
+    
+            <div class="section-title">
+              <h2>Portfolio</h2>
+            </div>
+    
+            <div class="row">
+              <div class="col-lg-12 d-flex justify-content-center bg-danger">
+                <p>Portfolio interface screenshot</p>
+              </div>
+            
+              <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                <div class="card">
+                    <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery"></a>
+                  
                 </div>
-                <script src="script.js"></script>
+              </div>
+    
+          </div>
+        </section><!-- End Portfolio Section -->
+        <!-- ======= Contact Section ======= -->
+        <section id="contact" class="contact">
+          <div class="container">
+    
+            <div class="section-title">
+              <h2>Contact</h2>
+            </div>
+              <h3 style="margin-left: 160px;">Adress<span style="margin-left: 450px;">Send me a note</span></h3>
+            <div class="row" data-aos="fade-in">
+              <div class="col-lg-5 ">
+                <div class="info">
+                  <div class="address">
+                    <i class="fa fa-map-marker"></i>
+                    <h4>Kigali-Rwanda</h4>
+                  </div>
+    
+                  <div class="email">
+                    <i class="fa fa-envelope"></i>
+                    <h4>+25076087331<h4>
+                    
+                  </div>
+    
+                  <div class="phone">
+                    <i style="font-size:24px" class="fa fa-phone"></i>
+                    <h4>festusniyongabo@gmail.com</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-7 mt-5 mt-lg-0 ">
                 
-                
+                <div class="row">
+                  <div class="input-group">
+                    <form>
+                      <div class="">
+                        <input type="text" name="name" size="38"  placeholder="enter name" id="contact-name" onkeyup="validateName()">
+                        <span id="name-error"></span> 
+                      </div>
+                      <div class=""> 
+                        <input type="text" name="subject" size="38" placeholder="subject" id="contact-subject" onkeyup="validateSubject()">
+                          <span id="subject-error"></span> 
+                      </div>
+                          
+                      <br/>
+                      <div class="" >
+                        <input type="email"  name="email" size="38"  placeholder="Email" id="contact-email" onkeyup="validateEmail()">
+                        <span id="email-error"></span>
+                      </div><br/>
+                      <div class="" >
+                        <textarea  rows="5" name="message" placeholder="message" id="contact-message" onkeyup="validateMessage()"></textarea>
+                        <span id="message-error"></span>
+                      </div>
+                    </div>
+                      <div class="" style="margin-left: 280px;"><button type="submit" style="background-color: rgb(21, 223, 199);" onclick="return validateForm()">Send Message</button>
+                        <span id="submit-error"></span>
+                      </div>
+                  
+                    </form>
+                  </div>
+                  <script src="script.js"></script>
+                  
+                  
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </section><!-- End Contact Section -->
-          
-          
-  
-    </main>
-  
-      <!-- ======= Footer ======= -->
-      <footer id="footer">
-        <div class="container">
+        </section><!-- End Contact Section -->
+            
+            
+    
+      </main>
+    
+        <!-- ======= Footer ======= -->
+        <footer id="footer">
           <div class="copyright">
             &copy; Copyright <strong><span>Portfolio</span></strong>
           
@@ -295,10 +311,11 @@
            
             Designed by <a href="#">Niyongabo Festus</a>
             </div>
-          </div>
-        </div>
-      </footer><!-- End  Footer -->
-    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+          </div> 
+        </footer><!-- End  Footer -->
+      <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    
+    
   
   </body>
 
