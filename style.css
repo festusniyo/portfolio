@@ -99,23 +99,38 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
   text-decoration: none;
 }
-
-
-
-@media (max-width: 1199px) {
-  #header {
-    left: -300px;
-  }
-
-  #main {
-    margin-left: 0;
-  }
-}
 .main_container{
-  margin-left: 150px;
+  margin-left: 50px;
   width: calc(100%-200px);
   padding: 15px;
   transition: all 0.3s ease;
+}
+
+.nav-menu .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .nav-menu ul:not(:first-child) {display: none;}
+  .nav-menu a.icon {
+    float: left;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .nav-menu.responsive {position: relative;}
+  .nav-menu.responsive .icon {
+    position: absolute;
+    left: 0;
+    margin-top: 50px;
+  }
+  .nav-menu.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+    margin-top: 400px;
+  }
 }
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -174,7 +189,7 @@ h1, h2, h3, h4, h5, h6 {
 .nav-menu a:hover i, .nav-menu .active i, .nav-menu .active:focus i, .nav-menu li:hover > a i {
   color: #36975f;
 }
-
+/*
 .hamburger div{
   width: 25px;
   height: 4px;
@@ -195,8 +210,7 @@ h1, h2, h3, h4, h5, h6 {
   width: calc(100% - 70px);
   margin-left: 70px;
 }
-
-
+*/
 /* Mobile Navigation */
 .mobile-nav-toggle {
   position: fixed;
@@ -788,7 +802,7 @@ section {
   position: fixed;
   left: 0;
   bottom: 0;
-  width: 300px;
+  width: 252px;
   z-index: 9999;
   background: #070808;
   
