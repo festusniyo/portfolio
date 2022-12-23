@@ -30,77 +30,81 @@
   
   </head>
   
-  <body>
-    
-  
-  
-    <!-- ======= Mobile nav toggle button ======= -->
-    <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+  <body class="side-header" data-bs-spy="scroll" data-bs-target="#header-nav" data-bs-offset="1">
+    <div id="menu" class="fa fa-bars"></div>
   
     <!-- ======= Header ======= -->
     <div class="wrapper">
       <header id="header" class="header">
-    
-        <div class="row">
-          <div class="col-6">
+        <nav class="primary-menu navbar navbar-expand-lg navbar-dark bg-dark border-bottom-0">
+          <div class="container-fluid position-relative h-100 flex-lg-column ps-3 px-lg-3 pt-lg-3 pb-lg-2">
             <div class="profile">
-              <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
-              <h1 class="text-light"><a href="index.html">Festus.N</a></h1>
+              <a href="index.html" class="mb-lg-auto mt-lg-4">
+                <span class="bg-dark-2 rounded-pill p-2 mb-lg-1 d-none d-lg-inline-block">
+                  <img class="img-fluid rounded-pill d-block" src="assets/img/profile-img.jpg" title="I'm Festus" alt="">
+                </span>
+                <h1 class="text-5 text-white text-center mb-0 d-lg-block">Niyongabo.F</h1>
+              </a>
             </div>
           </div>
     
-          <!--<div class="hamburger">
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>-->
-          <nav id="navbar" class="nav-menu navbar">
-            
-            
-            <ul>
-              <li><a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i></a></li>
-              <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-              <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About me</span></a></li>
-              <li><a href="#services" class="nav-link scrollto"><i class="bx bx-user"></i> <span>What I do</span></a></li>
-              <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-              <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
-              <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+          
+          <div id="header-nav" class="collapse navbar-collapse w-100 my-lg-auto">
+            <ul class="navbar-nav text-lg-center my-lg-auto py-lg-3">
+              <li class="nav-item"><a class="nav-link smooth-scroll active" href="#hero">Home</a></li>
+              <li class="nav-item"><a class="nav-link smooth-scroll" href="#about">About Me</a></li>
+              <li class="nav-item"><a class="nav-link smooth-scroll" href="#services">What I Do</a></li>
+              <li class="nav-item"><a class="nav-link smooth-scroll" href="#resume">Resume</a></li>
+              <li class="nav-item"><a class="nav-link smooth-scroll" href="#portfolio">Portfolio</a></li>
+              <li class="nav-item"><a class="nav-link smooth-scroll" href="#contact">Contact</a></li>
             </ul>
-          </nav><!-- .nav-menu -->
+          </div>
+          <ul class="social-icons social-icons-muted social-icons-sm mt-lg-auto ms-auto ms-lg-0 d-flex">
+            <li class="social-icons-facebook"><a data-bs-toggle="tooltip" href="#" target="_blank" aria-label="Facebook"><i class="fa fa-facebook-f"></i></a></li>
+            <li class="social-icons-twitter"><a data-bs-toggle="tooltip" href="#" target="_blank" aria-label="Twitter"><i class="fa fa-twitter"></i></a></li>
+            <li class="social-icons-dribbble"><a data-bs-toggle="tooltip" data-bs-placement="top" href="#" target="_blank" aria-label="Dribbble"><i class="fa fa-dribbble"></i></a></li>
+            <li class="social-icons-github"><a data-bs-toggle="tooltip" data-bs-placement="top" href="#" target="_blank" aria-label="GitHub"><i class="fa fa-github"></i></a></li>
+          </ul>
+          
           <script>
             function myFunction() {
-              var x = document.getElementById("navbar");
-              if (x.className === "nav-menu") {
+              var x = document.getElementById("primary-menu");
+              if (x.className === "primary-menu") {
                 x.className += " responsive";
               } else {
-                x.className = "nav-menu";
+                x.className = "primary-menu";
               }
             }
-            </script>
+         </script>
        </div>
        
       </header><!-- End Header -->
     </div>
-      <div class="media">
-        <div class="credits">
-          <a href="#" class="fa fa-twitter"><i class="bx bxl-twitter"></i></a>
-          <a href="#" class="fa fa-facebook"><i class="bx bxl-facebook"></i></a>
-          <a href="#" class="fa fa-instagram"><i class="bx bxl-instagram"></i></a>
-          <a href="#" class="fa fa-google-plus"><i class="bx bxl-skype"></i></a>
-          <a href="#" class="fa fa-linkedin"><i class="bx bxl-linkedin"></i></a>
-        </div>
-      </div>
-  
+      <div id="menu" class="fa fa-bars"></div>
       <!-- ======= Hero Section ======= -->
-      <section id="hero" class="d-flex flex-column justify-content-center align-items-center" style="background-image: url('./assets/img/bg.JPG');">
-        <div class="hero-container" data-aos="fade-in">
-          <p>Welcome</p>
-          <h1>hello,I'm NIYONGABO Festus</h1>
-          <p>I'm a web developer & web designer.</p>
-          <button class="btn btn-success" style="margin-left: 500px;">Hire Me</button>
-        </div>
-      </section><!-- End Hero -->
+      <section id="hero" class=" hero-mask opacity-1 bg-dark d-flex flex-column justify-content-center align-items-center" style="background-image: url('./assets/img/bg.JPG');">
+          <div class="hero-content section d-flex min-vh-100">
+            <div class="hero-container my-auto">
+              <div class="row">
+                <div class="col-12 text-center">
+                  <div class="typed-strings" style="display: none;">
+                    <p>I'm Niyongabo Festus</p>
+                    <p>I'm a Web developer.</p>
+                    <p>I'm a UX&UI Designer.</p>
+                  </div>
+                  <p class="text-7 fw-500 text-white mb-2 mb-md-3">Welcome</p>
+                  <h2 class="text-16 fw-600 text-white mb-2 mb-md-3"><span class="typed">I'm Niyongabo Fes</span><span class="typed-cursor">|</span></h2>
+                  <div class="adress">
+                    <p class="text-5 text-light mb-4">based in Kigali, Rwanda.</p>
+                  </div>
+                  <a href="#contact" class="btn btn-outline rounded-pill shadow-none smooth-scroll mt-2 fw-700">Hire Me</a>
+                </div>
+              </div>
+            </div>
+            <a href="#about" class="scroll-down-arrow text-white smooth-scroll"><span class="animated"><i class="fa fa-chevron-down"></i></span></a> </div>
+          </div>
+      </section>
+      <!-- End Hero -->
     
       <main id="main" class="main_container">
     
@@ -250,7 +254,7 @@
             <div class="section-title">
               <h2>Contact</h2>
             </div>
-              <h3 style="margin-left: 160px;">Adress<span style="margin-left: 450px;">Send me a note</span></h3>
+              <h3 style="margin-left: 160px;">Adress<span style="margin-left: 550px;">Send me a note</span></h3>
             <div class="row" data-aos="fade-in">
               <div class="col-lg-5 ">
                 <div class="info">
@@ -277,25 +281,20 @@
                   <div class="input-group">
                     <form>
                       <div class="">
-                        <input type="text" name="name" size="38"  placeholder="enter name" id="contact-name" onkeyup="validateName()">
+                        <input type="text" name="name" size="45"  placeholder="enter name" id="contact-name" onkeyup="validateName()">
                         <span id="name-error"></span> 
                       </div>
-                      <div class=""> 
-                        <input type="text" name="subject" size="38" placeholder="subject" id="contact-subject" onkeyup="validateSubject()">
-                          <span id="subject-error"></span> 
-                      </div>
-                          
                       <br/>
                       <div class="" >
-                        <input type="email"  name="email" size="38"  placeholder="Email" id="contact-email" onkeyup="validateEmail()">
+                        <input type="email"  name="email" size="45"  placeholder="Email" id="contact-email" onkeyup="validateEmail()">
                         <span id="email-error"></span>
                       </div><br/>
                       <div class="" >
                         <textarea  rows="5" name="message" placeholder="message" id="contact-message" onkeyup="validateMessage()"></textarea>
                         <span id="message-error"></span>
                       </div>
-                    </div>
-                      <div class="" style="margin-left: 280px;"><button type="submit" style="background-color: rgb(21, 223, 199);" onclick="return validateForm()">Send Message</button>
+                      </div>
+                      <div class="btn"><button id="submit-btn" class="" type="submit" onclick="return validateForm()">Send Message</button>
                         <span id="submit-error"></span>
                       </div>
                   
@@ -328,7 +327,6 @@
       <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
     
     
-  
   </body>
 
 
