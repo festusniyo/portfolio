@@ -173,7 +173,7 @@ header .follow a:hover{
     font-weight: 500; 
   }
   .hero-container a{
-    background-color: #282929;
+    background-color: #28292900;
     color: #20c997;
     border-color: #20c997;
     border-radius: 50px;
@@ -697,5 +697,8 @@ section {
     .experience .box-container .box{
         padding-right: 0;
     }
+    .contact .container .section-title .info form{
+      padding-right: 0;
+  }
 
 }
