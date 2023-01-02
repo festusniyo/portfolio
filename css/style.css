@@ -7,9 +7,8 @@
     font-family: 'Roboto', sans-serif;
     margin:0; padding:0;
     box-sizing: border-box;
-    outline: none; border:none;
+    outline: none; 
     text-decoration: none;
-    text-transform: capitalize;
     transition: all .2s linear;
     line-height: 1.5;
 }
@@ -25,10 +24,6 @@ body{
     padding-left: 25rem;
 }
 
-section{
-    padding:1rem 5%;
-    min-height: 100vh;
-}
 
 .heading{
     font-size: 4rem;
@@ -172,7 +167,7 @@ header .follow a:hover{
     font-size: 3rem !important;
     font-weight: 500; 
   }
-  .hero-container a{
+  .hero-container .btn{
     background-color: #28292900;
     color: #20c997;
     border-color: #20c997;
@@ -249,8 +244,9 @@ header .follow a:hover{
 # Sections General
 --------------------------------------------------------------*/
 section {
-    padding: 30px 0;
-    overflow: hidden;
+  min-height: 20vh;
+  overflow: hidden;
+  margin-right: 1rem;
   }
   
   .section-bg {
@@ -259,6 +255,8 @@ section {
   
   .section-title {
     padding-bottom: 30px;
+    margin-top: 30px;
+    margin-left: -10rem;
   }
   .section-title h2 {
     font-size: 32px;
@@ -336,7 +334,7 @@ section {
   # Resume
   --------------------------------------------------------------*/
   .resume .container{
-    margin-top: 0;
+    margin-top: 13rem;
   }
   .resume .me{
     margin-left: -11rem;
@@ -468,6 +466,7 @@ section {
   --------------------------------------------------------------*/
   .services.container{
     margin-top: 6rem;
+    right: 1rem;
   }
   .services .do{
     position: absolute;
@@ -604,26 +603,26 @@ section {
   .input-group span {
     color: seagreen;
   }
-  .input-group textarea{
-    width: 100%;
+  .input-group .message{
+    columns: 7;
     border-radius: 10px;
-    size: 2rem;
+  
   }
    input{
     border-radius: 10px;
     padding: 10px 10px;
   }
-  .contact .send button{
+  .contact .input-group .send button{
     border-radius: 15px;
-    margin-left: 75rem;
     background: #20c997;
     padding: 15px 30px;
     border-color: #20c997;
     color: #fff;
     font-weight: 500;
+    margin-left: 10rem;
  }
  .contact .send span{
-  margin-left: 85rem;
+  margin-left: 70rem;
   font-size: 12px;
  }
  .input-group span{
@@ -697,7 +696,7 @@ section {
     .experience .box-container .box{
         padding-right: 0;
     }
-    .contact .container .section-title .info form{
+    .contact .container .section-title .info .input-group{
       padding-right: 0;
   }
 
