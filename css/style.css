@@ -7,7 +7,7 @@
     font-family: 'Roboto', sans-serif;
     margin:0; padding:0;
     box-sizing: border-box;
-    outline: none; 
+    outline: none;border: none; 
     text-decoration: none;
     transition: all .2s linear;
     line-height: 1.5;
@@ -62,9 +62,9 @@ header{
     z-index: 1000;
     flex-flow: column;
     padding:8rem 2rem;
-    width:26rem;
+    width:25rem;
     text-align: center;
-    opacity: 9;
+    opacity:9;
 }
 header .profile img{
     height: 16.5rem;
@@ -96,6 +96,11 @@ header .navbar a{
 header .navbar a:hover{
     letter-spacing: .2rem;
     color:var(--main-color);
+}
+.navbar a.active:not(.btn) {
+  color: #20c997;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 header .follow a{
@@ -275,9 +280,9 @@ section {
     display: block;
     width: 50px;
     height: 3px;
-    background: #14dd50;
-    bottom: 0;
-    left: 30px;
+    background: #20c997;
+    bottom: 2rem;
+    left: 40px;
   }
   .section-title p {
     margin-bottom: 0;
@@ -405,6 +410,45 @@ section {
     border: 2px solid #1f5297;
     
   }
+  /*--------------------------------------------------------------
+# Akills
+--------------------------------------------------------------*/
+.skills .progress {
+  height: 60px;
+  display: block;
+  background: none;
+  border-radius: 0;
+  margin-left: 30px;
+}
+.skills .progress .skill {
+  padding: 0;
+  margin: 0 0 6px 0;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: #050d18;
+  font-size: 16px;
+}
+.skills .progress .skill .val {
+  float: right;
+  font-style: normal;
+}
+.skills .progress-bar-wrap {
+  background: #dce8f8;
+  height: 10px;
+}
+.skills .progress-bar {
+  width: 1px;
+  height: 10px;
+  transition: 0.9s;
+  background-color: #040505;
+}
+.skills .container .section-title p{
+  margin-left: 130px;
+  font-size: 14px;
+}
+
   
   /*--------------------------------------------------------------
   # Portfolio
@@ -622,16 +666,24 @@ section {
     margin-left: 10rem;
  }
  .contact .send span{
-  margin-left: 70rem;
+  margin-left: 15rem;
   font-size: 12px;
  }
  .input-group span{
   font-size: 12px;
  }
+ .contact .info h1{
+  font-size: 20px;
+  color: #1f2020;
+ }
+ .contact .info a{
+  padding: 0.5rem 0.5rem;
+  color:#1f2020
+ }
 .footer{
-    margin-top: 2rem;
-    font-size: 2rem;
-    padding:2.5rem;
+    margin-top: 4rem;
+    font-size: 1.5rem;
+    padding:2rem;
     text-align: center;
     color:#666;
     background: #fff;
