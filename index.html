@@ -294,7 +294,7 @@
     <section class="post" id="post">
       <h2 class="posts-title">Calculator and TODO list links<span>Click to access</span></h2>
       <div class="posts-container">
-          <a href="https://codepen.io/Festus_niyo/full/xxJREwR" class="post-card">
+          <a href="https://codepen.io/Festus_niyo/full/xxJREwR" class="post-card" target="_blank">
             <img src="images/todo.jpg" alt="" class="img-post"> 
             <div class="post-content">
               <h3 class="post-title text-sm">TO DO LIST</h3>
@@ -303,15 +303,15 @@
             </div>  
           </a>
           <br/>
-          <a href="https://festusportfolio.vercel.app/" class="post-card">
-              <img src="images/portfolio.jpg" alt="" class="img-post">
+          <a href="https://festusportfolio.vercel.app/" class="post-card" target="_blank">
+              <img src="images/portfolio.jpg" alt="" class="img-post" >
               <div class="post-content">
                 <h3 class="post-title text-sm">My Web</h3>
                 <p class="post-date text-xs">10/12/2022</p>
                 <p class="post-description text-sm">This website describe me</p>
               </div>
           </a>
-          <a href="https://festusniyo.github.io/calculator/" class="post-card">
+          <a href="https://festusniyo.github.io/calculator/" class="post-card" target="_blank">
               <img src="images/calculator1.jpg" alt="" class="cal-post">
               <div class="post-content">
                 <h3 class="post-title text-sm">Calculator App</h3>
@@ -359,7 +359,7 @@
           <h2>Send us a node </h2>
           <div class="row">
   
-            <form action="" id="contact-form">
+            <form method="post" id="contact">
     
               <input type="text" name="name" class="form-control" size="43.5"  placeholder="Enter name" id="contact-name" onkeyup="validateName()">
               <span id="name-error"></span>
@@ -391,8 +391,71 @@
 <script src="js/script.js"></script>
 <script src="typed.js/typed.min.js"></script>
 <script src="js/main.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
+<script
+type="text/javascript"
+src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"
+></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+<script type="text/javascript">
+(function () {
+  // emailjs.init("USERID");
+  emailjs.init("user_SXwbm2bfwtluGBhARcTaf");
+})();
+
+function validate() {
+  let loader = document.querySelector(".loader");
+  let name = document.querySelector(".username");
+  let email = document.querySelector(".email");
+  let message = document.querySelector(".message");
+  let btn = document.querySelector(".submit");
+
+  btn.addEventListener("click", (e) => {
+    e.preventDefault();
+    if (name.value == "" || email.value == "" || message.value == "") {
+      emptyerror();
+    } else {
+      loader.style.display = "flex";
+      sendmail(name.value, email.value, message.value);
+      success();
+      loader.style.display = "none";
+    }
+  });
+}
+validate();
+
+function sendmail(name, email, message) {
+  emailjs.send("service_id", "template_name", {
+    to_name: "your recipient name",
+    from_name: email,
+    message: msg,
+  });
+}
+
+function emptyerror() {
+  Swal.fire({
+    icon: "error",
+    title: "Oops...",
+    text: "Fields cannot be empty!",
+  });
+}
+
+function error() {
+  Swal.fire({
+    icon: "error",
+    title: "Oops...",
+    text: "Something went wrong!",
+  });
+}
+
+function success() {
+  Swal.fire({
+    icon: "success",
+    title: "Success...",
+    text: "Successfully sent message",
+  });
+}
+</script>
 
 </body> 
 </html>
