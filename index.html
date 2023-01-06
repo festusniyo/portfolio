@@ -359,7 +359,7 @@
           <h2>Send us a node </h2>
           <div class="row">
   
-            <form action="">
+            <form action="" id="contact-form">
     
               <input type="text" name="name" class="form-control" size="43.5"  placeholder="Enter name" id="contact-name" onkeyup="validateName()">
               <span id="name-error"></span>
@@ -368,7 +368,7 @@
               <textarea  rows="5" name="message" placeholder="Tell me more about your need..." id="contact-message" onkeyup="validateMessage()"></textarea>
               <span id="message-error"></span>
               <br/>
-              <button class="button" type="submit" onclick="return validateForm()">Send Message</button>
+              <button class="button contact-button" type="submit" onclick="return validateForm()" id="btn">Send</button>
               <span id="submit-error"></span>
     
             </form>
@@ -391,7 +391,8 @@
 <script src="js/script.js"></script>
 <script src="typed.js/typed.min.js"></script>
 <script src="js/main.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
 
-</body>
+</body> 
 </html>

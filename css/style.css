@@ -722,6 +722,9 @@ section {
     height: 20rem;
     resize: none;
 }
+.contact .row  span{
+  color: seagreen;
+}
 
 .contact .row form .button{
     display: block;

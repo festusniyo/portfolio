@@ -1,5 +1,4 @@
 var nameError = document.getElementById('name-error');
-var subjectError = document.getElementById('subject-error');
 var emailError = document.getElementById('email-error');
 var messageError = document.getElementById('message-error');
 var submitError = document.getElementById('submit-error');
@@ -19,16 +18,6 @@ function validateName(){
     return true;
 }
 
-function validateSubject(){
-    var subject = document.getElementById('contact-subject').value;
-
-    if(subject.length==0){
-        subjectError.innerHTML= 'subject is required';
-        return false;
-    }
-    subjectError.innerHTML = '<span>Valid<span>';
-    return true;
-}
 
 function validateEmail(){
     var email = document.getElementById('contact-email').value;
@@ -65,6 +54,8 @@ function validateForm(){
         return false;
     }
 }
+
+
 
 
 
