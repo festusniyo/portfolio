@@ -259,35 +259,49 @@ section {
   }
   
   .section-title {
-    padding-bottom: 30px;
-    margin-top: 30px;
-    margin-left: -10rem;
+    position: relative;
+    margin-bottom: 3rem;
+    display: flex;
+    text-align: center;
   }
   .section-title h2 {
-    font-size: 32px;
+    margin-bottom: 0;
+    text-align: center;
+    color: #dee3e4;
+    opacity: 0.4;
     font-weight: 600;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-    position: relative;
-    color: #bbbfc0 !important;
-    margin-left: 500px;
-    opacity: 0.9;
+    line-height: 1.3;
+    font-size: calc(1.95rem + 8.4vw);
+    width: 100%;
     text-transform: uppercase;
   }
-  .section-title h2::after {
+  .section-title p {
+    position: absolute;
+    font-weight: 600;
+    font-size: 2.5rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+    --bs-text-opacity: 1;
+    color: rgba(var(--bs-dark-rgb),var(--bs-text-opacity));
+    width: 100%;
+    display: block;
+    margin-block-start: 2em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    
+  }
+  .section-title span {
     content: "";
     position: absolute;
-    display: block;
+    display: flex;
     width: 50px;
     height: 3px;
     background: #20c997;
-    bottom: 2rem;
-    left: 40px;
+    margin-left: 52rem;
+    margin-top: 0.5rem;
   }
-  .section-title p {
-    margin-bottom: 0;
-    
-  }
+  
   
   /*--------------------------------------------------------------
   # About
@@ -295,61 +309,47 @@ section {
   .about{
     margin-top: 6rem;
   }
-  .about .content h3 {
+  .about .row{
+    display: flex;
+  }
+  .about .row  h3 {
     font-weight: 700;
     font-size: 26px;
     color: #21bd62;
-    margin-left: 400px;
-    margin-top: -250px;
+    padding-left: 5rem;
+    
   }
-  .about .content .about-start ul {
+  .about .row .about-start ul {
     list-style: none;
-    padding: 0;
-    margin-left: 200px;
+    padding-left: 5rem;
+    padding-top: 1rem;
     margin-top: 0px;
     font-size: 2rem;
   }
-  .about .content .about-end ul {
+  .about .row .about-end ul {
     list-style: none;
-    padding: 0;
-    margin-left: 600px;
-    margin-top: -200px;
+    padding-top: 5rem;
     font-size: 2rem;
   }
-  .about .content ul li {
+  .about  ul li {
     margin-bottom: 20px;
     display: flex;
     align-items: center;
   }
-  .about .content ul strong {
-    margin-left: 0px;
-  }
-  .about .content ul i {
-    font-size: 16px;
-    margin-left: 130px;
-    color: #149ddd;
-    line-height: 0;
-  }
-  .about .content p:last-child {
-    margin-bottom: 0;
-  }
-  
   
   /*--------------------------------------------------------------
   # Resume
   --------------------------------------------------------------*/
-  .resume .container{
-    margin-top: 13rem;
-  }
-  .resume .me{
-    margin-left: -11rem;
+  .resume .row{
+    display: flex;
+    gap: 1.5;
   }
   .container em{
     font-size: 12px;
   }
   .container .experience{
-    margin-left: 500px;
-    margin-top: -40rem;
+    margin-left: 5rem;
+   
   }
   .resume .resume-title {
     font-size: 26px;
@@ -357,14 +357,13 @@ section {
     margin-top: 20px;
     margin-bottom: 20px;
     color: #050d18;
-    margin-left: 140px;
+    margin-left: 1.8rem;
   }
   .resume .resume-item {
     padding: 0 0 20px 20px;
-    margin-top: -2px;
     border-left: 2px solid #060708;
     position: relative;
-    margin-left: 140px;
+    margin-left: 1.8rem;
   }
   .resume .resume-item h4 {
     line-height: 18px;
@@ -411,8 +410,22 @@ section {
     
   }
   /*--------------------------------------------------------------
-# Akills
+skills
 --------------------------------------------------------------*/
+.skills .skills-title{
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+  padding-top: 5rem;
+}
+.skills .skills-title h2{
+  font-size: 3rem;
+  font-weight: 700;
+}
+.skills .skills-title p{
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 2rem;
+}
 .skills .progress {
   height: 60px;
   display: block;
@@ -427,7 +440,7 @@ section {
   display: block;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
-  color: #050d18;
+  color: #020702;
   font-size: 16px;
 }
 .skills .progress .skill .val {
@@ -488,12 +501,11 @@ section {
   }
   .portfolio .box-container .box4{
     height: 22rem;
-    width: 40rem;
+    width: 33rem;
     border-radius: 1rem;
     margin: 1rem;
     overflow: hidden;
     cursor: pointer;
-    margin-left: -260px;
   }
   .portfolio p{
     font-size: 32px;
@@ -510,26 +522,22 @@ section {
   --------------------------------------------------------------*/
   .services.container{
     margin-top: 6rem;
-    right: 1rem;
   }
-  .services .do{
-    position: absolute;
-    flex-flow: row;
+  .services .row{
+    display: flex;
     
   }
   .services .icon-box1 {
     margin-bottom: 20px;
-    margin-left: -100px;
+    padding-left: 5rem;
   }
   .services .icon-box2 {
     margin-bottom: 20px;
-    margin-left: 200px;
-    margin-top: -11.5rem;
+    padding-left: 5rem;
   }
   .services .icon-box3 {
     margin-bottom: 20px;
-    margin-left: 500px;
-    margin-top: -11.5rem;
+    padding-left: 5rem;
   }
   .services .icon {
     float: left;
@@ -542,7 +550,6 @@ section {
     border-radius: 50%;
     transition: 0.5s;
     border: 1px solid #fff;
-    margin-left: 170px;
   }
   .services .icon i {
     color: rgb(35, 203, 139);
@@ -556,7 +563,6 @@ section {
     color: #fff;
   }
   .services .title {
-    margin-left: 80px;
     font-weight: 700;
     margin-bottom: 15px;
     font-size: 18px;
@@ -569,8 +575,6 @@ section {
     color: #fff;
   }
   .services .description {
-    margin-left: 200px;
-    line-height: 24px;
     font-size: 14px;
   }
   
@@ -597,29 +601,30 @@ section {
 }
 .contact .contact-title p{
   position: absolute;
-  font-weight: 600;
-  font-size: 2.5rem;
+  font-weight: 700;
+  font-size: 3rem;
   line-height: 1.5;
   margin-bottom: 0;
   --bs-text-opacity: 1;
   color: rgba(var(--bs-dark-rgb),var(--bs-text-opacity));
   width: 100%;
   display: block;
-  margin-block-start: 3em;
+  margin-block-start: 2em;
   margin-block-end: 1em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
 
 }
-.contact .contact-title p::after{
-    content: "";
-    position: absolute;
-    display: block;
-    width: 50px;
-    height: 3px;
-    background: #20c997;
-    bottom: 1rem;
-    margin-left: 52rem;
+.contact .contact-title span{
+  content: "";
+  position: absolute;
+  display: flex;
+  width: 50px;
+  height: 3px;
+  background: #20c997;
+  margin-left: 52rem;
+  margin-top: 0.5rem;
+  
 }
 
 .contact .row{
