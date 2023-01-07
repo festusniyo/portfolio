@@ -307,7 +307,7 @@ section {
   # About
   --------------------------------------------------------------*/
   .about{
-    margin-top: 6rem;
+    margin-top: 1rem;
   }
   .about .row{
     display: flex;
