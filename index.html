@@ -11,6 +11,15 @@
 
     <!-- custom css file link  -->
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/email.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+      emailjs.init("template_6uh139r");
+    })();
+    </script>
 
 </head>
 <body>
@@ -374,16 +383,16 @@
           <h2>Send us a node </h2>
           <div class="row">
   
-            <form method="post" id="contact">
+            <form id="contact-form">
     
-              <input type="text" name="name" class="form-control" size="43.5"  placeholder="Enter name" id="contact-name" onkeyup="validateName()">
+              <input type="text" name="name" class="form-control" size="43.5"  placeholder="Enter name" id="name" onkeyup="validateName()">
               <span id="name-error"></span>
-              <input type="email"  name="email" class="form-control" size="41"  placeholder="Email" id="contact-email" onkeyup="validateEmail()">
+              <input type="email"  name="email" class="form-control" size="41"  placeholder="Email" id="email" onkeyup="validateEmail()">
               <span id="email-error"></span>
-              <textarea  rows="5" name="message" placeholder="Tell me more about your need..." id="contact-message" onkeyup="validateMessage()"></textarea>
+              <textarea  rows="5" name="message" placeholder="Tell me more about your need..." id="message" onkeyup="validateMessage()"></textarea>
               <span id="message-error"></span>
               <br/>
-              <button class="button contact-button" type="submit" onclick="return validateForm()" id="btn">Send Message</button>
+              <button class="button contact-button" type="submit"  onclick="return validateForm()">Send Message</button>
               <span id="submit-error"></span>
     
             </form>
@@ -406,71 +415,6 @@
 <script src="js/script.js"></script>
 <script src="typed.js/typed.min.js"></script>
 <script src="js/main.js"></script>
-
-<script
-type="text/javascript"
-src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"
-></script>
-<script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-<script type="text/javascript">
-(function () {
-  // emailjs.init("USERID");
-  emailjs.init("user_SXwbm2bfwtluGBhARcTaf");
-})();
-
-function validate() {
-  let loader = document.querySelector(".loader");
-  let name = document.querySelector(".username");
-  let email = document.querySelector(".email");
-  let message = document.querySelector(".message");
-  let btn = document.querySelector(".submit");
-
-  btn.addEventListener("click", (e) => {
-    e.preventDefault();
-    if (name.value == "" || email.value == "" || message.value == "") {
-      emptyerror();
-    } else {
-      loader.style.display = "flex";
-      sendmail(name.value, email.value, message.value);
-      success();
-      loader.style.display = "none";
-    }
-  });
-}
-validate();
-
-function sendmail(name, email, message) {
-  emailjs.send("service_id", "template_name", {
-    to_name: "your recipient name",
-    from_name: email,
-    message: msg,
-  });
-}
-
-function emptyerror() {
-  Swal.fire({
-    icon: "error",
-    title: "Oops...",
-    text: "Fields cannot be empty!",
-  });
-}
-
-function error() {
-  Swal.fire({
-    icon: "error",
-    title: "Oops...",
-    text: "Something went wrong!",
-  });
-}
-
-function success() {
-  Swal.fire({
-    icon: "success",
-    title: "Success...",
-    text: "Successfully sent message",
-  });
-}
-</script>
 
 </body> 
 </html>

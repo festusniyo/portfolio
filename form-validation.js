@@ -4,7 +4,7 @@ var messageError = document.getElementById('message-error');
 var submitError = document.getElementById('submit-error');
 
 function validateName(){
-    var name = document.getElementById('contact-name').value;
+    var name = document.getElementById('name').value;
 
     if(name.length==0){
         nameError.innerHTML= 'name is required';
@@ -20,7 +20,7 @@ function validateName(){
 
 
 function validateEmail(){
-    var email = document.getElementById('contact-email').value;
+    var email = document.getElementById('email').value;
 
     if(email.length==0){
         nameError.innerHTML= 'email is required';
@@ -35,8 +35,8 @@ function validateEmail(){
 }
 
 function validateMessage(){
-    var message = document.getElementById('contact-message').value;
-    var required = 30;
+    var message = document.getElementById('message').value;
+    var required = 5;
     var left = required - message.length;
     if (left>0){
         messageError.innerHTML = left + 'more characters required';

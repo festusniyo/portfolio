@@ -7,7 +7,7 @@
     font-family: 'Roboto', sans-serif;
     margin:0; padding:0;
     box-sizing: border-box;
-    outline: none;border: none; 
+    outline: none;border:#20c997; 
     text-decoration: none;
     transition: all .2s linear;
     line-height: 1.5;
@@ -173,7 +173,7 @@ header .follow a:hover{
     font-weight: 500; 
   }
   .hero-container .btn{
-    background-color: #28292900;
+    background-color: #505b5b00;
     color: #20c997;
     border-color: #20c997;
     border-radius: 50px;
@@ -182,8 +182,6 @@ header .follow a:hover{
     border-width: 2px;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
-    box-shadow: none!important;
-    opacity: 0.8;
     margin-top: 4rem;
   }
   .hero-container a:hover{
@@ -291,15 +289,21 @@ section {
     margin-inline-end: 0px;
     
   }
-  .section-title span {
+  .section-title p::after {
     content: "";
+    align-content: center;
     position: absolute;
-    display: flex;
-    width: 50px;
-    height: 3px;
     background: #20c997;
-    margin-left: 52rem;
-    margin-top: 0.5rem;
+    line-height: 1.5;
+    height: 3px;
+    margin-bottom: 0;
+    --bs-text-opacity: 1;
+    width: 6%;
+    margin-block-start: 1.5em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin-left: -12.8rem;
   }
   
   
@@ -631,15 +635,21 @@ skills
   margin-inline-end: 0px;
 
 }
-.contact .contact-title span{
+.contact .contact-title p::after{
   content: "";
+  align-content: center;
   position: absolute;
-  display: flex;
-  width: 50px;
-  height: 3px;
   background: #20c997;
-  margin-left: 52rem;
-  margin-top: 0.5rem;
+  line-height: 1.5;
+  height: 3px;
+  margin-bottom: 0;
+  --bs-text-opacity: 1;
+  width: 6%;
+  margin-block-start: 1.5em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  margin-left: -13.8rem;
   
 }
 
