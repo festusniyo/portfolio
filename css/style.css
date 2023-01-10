@@ -432,55 +432,171 @@ section {
   /*--------------------------------------------------------------
 skills
 --------------------------------------------------------------*/
+.skills{
+  padding-bottom: 4rem;
+  padding-top: 4rem;
+}
 .skills .skills-title{
-  margin-left: 2rem;
-  margin-bottom: 2rem;
-  padding-top: 5rem;
+  padding-bottom: 2rem;
 }
 .skills .skills-title h2{
-  font-size: 3rem;
+  font-size: 32px;
   font-weight: 700;
+  padding-left: 2rem;
 }
 .skills .skills-title p{
-  font-size: 2rem;
+  font-size: 20px;
   font-weight: 600;
-  margin-top: 2rem;
+  padding-left: 2rem;
 }
-.skills .progress {
-  height: 60px;
-  display: block;
-  background: none;
-  border-radius: 0;
-  margin-left: 30px;
+.levels_section{
+  padding-bottom: 2rem;
+  padding: 0px 5%;
+  background-color: rgba(245, 241, 241, 0.942);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
-.skills .progress .skill {
-  padding: 0;
-  margin: 0 0 6px 0;
-  text-transform: uppercase;
-  display: block;
+.levels_head{
+  width: 100%;
+  margin-bottom: 20px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+.levels_head h2{
+  font-size: 30px;
+  margin-bottom: -5px;
+}
+.levels_head h2 span{
+  color: #20c997;
+}
+.skills_main{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 30px;
+  grid-column-gap: 50px;
+}
+.skills_main .skill_bar .info{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:  0 10px;
+}
+.skill_bar .info p:nth-child(1){
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.skill_bar .info p:nth-child(2){
   font-weight: 600;
-  font-family: "Poppins", sans-serif;
-  color: #020702;
-  font-size: 16px;
+  font-size: 1.2rem;
 }
-.skills .progress .skill .val {
-  float: right;
-  font-style: normal;
-}
-.skills .progress-bar-wrap {
-  background: #dce8f8;
+.skill_bar .bar{
+  width: 100%;
   height: 10px;
+  background-color: rgba(0, 0, 0, 0.144);
+  border-radius: 25px;
+  margin-top: 5px;
+  position: relative;
 }
-.skills .progress-bar {
-  width: 1px;
-  height: 10px;
-  transition: 0.9s;
-  background-color: #040505;
+.skill_bar .bar span{
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  background-color: #20c997;
+  border-radius: 25px;
 }
-.skills .container .section-title p{
-  margin-left: 130px;
-  font-size: 14px;
+.skill_bar .bar .html{
+  width: 100%;
+  animation: html 2s;
 }
+@keyframes html {
+  0%{
+      width: 0%;
+  }100%{
+      width: 100%;
+  }
+}
+.skill_bar .bar .css{
+  width: 85%;
+  animation: css 2s;
+}
+@keyframes css {
+  0%{
+      width: 0%;
+  }100%{
+      width: 85%;
+  }
+}
+.skill_bar .bar .php{
+  width: 90%;
+  animation: sass 2s;
+}
+@keyframes sass {
+  0%{
+      width: 0%;
+  }100%{
+      width: 90%;
+  }
+}
+.skill_bar .bar .js{
+  width: 70%;
+  animation: css 2s;
+}
+@keyframes js {
+  0%{
+      width: 0%;
+  }100%{
+      width: 70%;
+  }
+}
+.skill_bar .bar .react{
+  width: 70%;
+  animation: react 2s;
+}
+@keyframes react {
+  0%{
+      width: 0%;
+  }100%{
+      width: 70%;
+  }
+}
+.skill_bar .bar .node{
+  width: 70%;
+  animation: node 2s;
+}
+@keyframes node {
+  0%{
+      width: 0%;
+  }100%{
+      width: 70%;
+  }
+}
+.skill_bar .bar .press{
+  width: 85%;
+  animation: press 2s;
+}
+@keyframes press {
+  0%{
+      width: 0%;
+  }100%{
+      width: 85%;
+  }
+}
+.skill_bar .bar .db{
+  width: 90%;
+  animation: db 2s;
+}
+@keyframes db {
+  0%{
+      width: 0%;
+  }100%{
+      width: 90%;
+  }
+}
+
 
   
   /*--------------------------------------------------------------
