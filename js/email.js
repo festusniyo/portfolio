@@ -1,16 +1,15 @@
-function sendMail() {
-    var params = {
-      name: document.getElementById("name").value,
-      email: document.getElementById("email").value,
-      message: document.getElementById("message").value,
-    };
-  
+const contactForm = document.getElementById("contact-form"),
+      name = document.getElementById("name"),
+      email = document.getElementById("email"),
+      message = document.getElementById("message");
+const sendEmail = (e) => {
+  e.preventDefault();
+      
     const serviceID = "service_apy3n75";
     const templateID = "template_6uh139r";
   
-    emailjs
-      .send(serviceID, templateID, params)
-      .then(res=>{
+    emailjs.send(serviceID, templateID, '#contact-form','')
+    .then(res=>{
           document.getElementById("name").value = "";
           document.getElementById("email").value = "";
           document.getElementById("message").value = "";
@@ -20,4 +19,5 @@ function sendMail() {
         })
         .catch(err=>console.log(err));
   
-  }
+};
+contactForm.addEventListener('submit', sendEmail);
